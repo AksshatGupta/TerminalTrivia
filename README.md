@@ -1,1 +1,1 @@
-"# TerminalTrivia" 
+# TerminalTrivia
