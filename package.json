@@ -1,0 +1,8 @@
+{
+  "name": "TerminalTrivia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AksshatGupta/TerminalTrivia",
+  "author": "AksshatGupta <aksshatyashgupta@gmail.com>",
+  "license": "MIT"
+}
