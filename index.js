@@ -8,7 +8,7 @@ const say = require('say');
 // Stop the text currently being spoken
 // say.stop()
 
-//say.getInstalledVoices(console.log);
+// say.getInstalledVoices(console.log);
 
 const { fetchUrl } = require('fetch');
 
@@ -18,13 +18,16 @@ fetchUrl('http://jservice.io/api/random', (error, meta, body) => {
   // say.speak(triviaObject.question, function() {
   //   say.speak(triviaObject.answer);
   // });
+  // eslint-disable-next-line no-console
   console.log(triviaObject.question);
   say.speak(triviaObject.question, 'Microsoft David Desktop', 1.0, (err) => {
     if (err) {
-      return say.speak("Something is not right");
+      say.speak('Something is not right');
+      return;
     }
 
     say.speak(triviaObject.answer);
+    // eslint-disable-next-line no-console
     console.log(triviaObject.answer);
   });
 });
